@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Menu Section -->
+    <section>    
+        <h2>Lukman Ahmad <sup>&copy;</sup></h2>
+        <nav>
+            <ul>
+                <li><a href = "main.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "history.html">History</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <h1>Contact</h1>
+        <form action="/Kirim" method="post">
+            <div>
+            <label for="name">Nama Lengkap</label>
+            <input type="text" placeholder="Nama" id="name" name="name">
+            </div>
+            
+            <div>        
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email" name="email">
+            </div>
+
+            <div>       
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password" 
+            required minlength="8"
+            >
+            </div>
+
+            <div>
+            <label for="number">Number</label>
+            <input type="number" placeholder="Phone" name="number">
+            </div>
+
+            <div>
+            <button type="submit">Kirim</button>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <!-- Order -->
+    <section>
+        <h1>Pesanan</h1>
+        <form action = "/order">
+
+            <div>
+            <label for="">Pilih jenis pesanan</label>
+            </div>
+
+            <div>
+            <input type="radio" name="pesanan" id="" value="VIP"><label for ="">VIP</label>
+            </div>
+
+            <div>
+            <input type="radio" name="pesanan" id="" value="Normal"><label for ="">Normal</label>
+            </div>
+
+            <div>
+            <label for="durasi">Durasi</label>
+                <select name="durasi" id="durasi">
+                    <option>--</option>
+                    <option value="5m">5 Menit</option>
+                    <option value="10m">10 Menit</option>
+                    <option value="15m">15 Menit</option>
+                </select>
+            </div>
+
+            <div>
+            <label for="term">Saya setuju</label>
+            <input type="checkbox" name="term" id="term" value="True">
+            </div>
+
+            <div>
+                <p>
+                <label for="notes">Notes</label>
+                </p>
+                <textarea name="" id="" cols="50" rows="10"></textarea>
+            </div>
+
+            <button type="submit">Order</button>
+        </form>
+    </section>
+
+</body>
+</html>

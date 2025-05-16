@@ -1,0 +1,27 @@
+div 
+{
+    width: 300px;
+}
+
+div 
+{
+    border-style: inset groove groove inset;
+    border-width: 5px;
+}
+
+div 
+{
+    padding: 30px 20px;
+    /*Vertikal 30px, Horizontal 20px*/
+    /* top, right, bottom, left */
+}
+
+div
+{
+    margin: 35px 50px;
+}
+
+/* 
+Padding dalam border
+Margin luar border
+*/

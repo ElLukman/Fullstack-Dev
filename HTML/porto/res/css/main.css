@@ -1,5 +1,5 @@
 * {
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1
@@ -32,4 +32,35 @@ img
 a
 {
     text-decoration: none;
+}
+
+/* ID Selector */
+#judul
+{
+    color: red;
+}
+
+#judul:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+#searchbar:focus
+{
+    background-color: rgb(41, 53, 216);
+    color: white;
+}
+
+/* Class Selector */
+.mark 
+{
+    color: black;
+}
+
+/* Descendant Selector */
+article p
+{
+    color: blue;
 }

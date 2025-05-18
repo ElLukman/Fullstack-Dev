@@ -66,7 +66,7 @@ body
     background-color: whitesmoke;
     border-radius: 25px;
     padding: 15px 25px;
-    margin: 20px 0px;
+    margin: 50px 0px;
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -126,7 +126,7 @@ body
 {
     color: #1571e9;
     display: block;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -169,5 +169,14 @@ body
         border-bottom: none;
         border-right: 1px solid #c7c7c7;
         padding: 25px 50px;
+    }
+    .divisi-img.second
+    {
+        border-top: none;
+        border-left: 1px solid #c7c7c7;
+    }
+    .divisi-features-item:last-child
+    {
+        border-bottom: none;
     }
 }

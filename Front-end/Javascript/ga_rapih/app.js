@@ -70,3 +70,47 @@ alert('ok');
 // Math Random 
 const RandomNum = Math.floor((Math.random() * 45) + 1);
 console.log(RandomNum);
+
+// Elegant way to for loops 
+const Students = ['Adam', 'Bimo', 'Ezra'];
+
+for (let student of Students)
+{
+    console.log(`${student}`);
+}
+
+const StdClassA = 
+[
+    ['Zia', 'Fadel', 'Yusuf'],
+    ['Ali', 'Arsyad', 'Ishaq']
+]
+
+for (let row of StdClassA)
+{
+    for (let std_a of row)
+    {
+        console.log(std_a);
+    }
+}
+
+// Object data types
+const nim_mahasiswa = {
+    Arkan: 20,
+    Aulia: 21,
+    Chantika: 22,
+    Ersa: 23, 
+    Daffa: 24,
+};
+
+for (let nim in nim_mahasiswa)
+{
+    console.log(`${nim} nim awalan ${nim_mahasiswa[nim]}`);
+}
+
+let total = 0;
+let scores = Object.values(nim_mahasiswa);
+for (let score of scores)
+{
+    total += score;
+}
+console.log(total);

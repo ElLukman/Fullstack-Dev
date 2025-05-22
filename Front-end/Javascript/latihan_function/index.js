@@ -56,6 +56,16 @@ const MeetEpisodes =
         title:'The past that bring us',
         index_episode: 3,
         rating: 8.5
+    },
+    {
+        title:'Damn us both!',
+        index_episode: 4,
+        rating: 9.2
+    },
+    {
+        title:'Hollow',
+        index_episode: 5,
+        rating: 9
     }
 ]
 
@@ -77,3 +87,64 @@ const CountToTwoDouble = CountToTwo.map(function (num)
 {
     return num*2;
 });
+
+/*
+// Function Expression
+const HasilPerpangkatan = function (x)
+{
+    return x*x;
+};
+*/
+
+// Arrow function, lebih compact
+const perpangkatan = (x) => 
+{
+    return x*x;
+}
+
+// Implisit return di Arrow function
+const dividebytwo = (a) => (a/2);
+
+// // Function SetTimeOut & SetInterval
+// console.log("You the thought that can't be tamed");
+// setTimeout(()=>{
+//     console.log("And i'm trying to be sane");
+// }, 5000)
+// console.log("And i'm trying to be sane");
+
+// Set Interval 
+// setInterval( () => console.log(Math.floor(Math.random() * 1000) + 1), 1000)
+
+// Stoping set Interval
+// const interval = setInterval( () => {console.log(Math.floor(Math.random() * 1000) + 1);}, 1000);
+
+// Filtering Method for Array 
+const DatasetAngka_1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+const KumpulanAngkaGanjil_1 = DatasetAngka_1.filter(ganjil => 
+    {
+        return ganjil % 2 === 1;
+    });
+
+// Filtering Episode Ratings + It can be get mapped
+const GoodEpisode = MeetEpisodes.filter(eps => eps.rating >= 8.8).map((eps) => eps.title);
+
+// Menentukan Benar Atau Salah Pada Array Dengan Every Dan Some Method
+const DatasetStatus_1 = [1001, 1001, 1001, 1002, 1002, 1003]
+const isVIP = DatasetStatus_1.some((vip) => vip > 1001);
+
+// For array of object
+const RecentEpisode = MeetEpisodes.some((eps) => eps.index_episode > 2)
+
+// Reduce function for Array
+const DatasetMoney_1 = [1000, 1000, 2000, 5000, 10000, 10000, 20000, 5000]
+
+const TotalDatasetMoney_1 = DatasetMoney_1.reduce( (curr_total, singletotal) => 
+{
+    return curr_total + singletotal;
+})
+
+// In object case
+const BestEpisode = MeetEpisodes.reduce((bestEps, currEps) => 
+    {
+        if(curr_total.ra)
+    });

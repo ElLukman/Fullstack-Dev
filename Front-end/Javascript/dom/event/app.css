@@ -1,0 +1,40 @@
+*
+{
+    font-family: sans-serif;
+}
+
+
+.sqr-btn 
+{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.preview
+{
+    width: 500px;
+    height: 200px;
+    margin: 50px 0px;
+    border: solid, black;
+}
+
+.hide
+{
+    display: none;
+}
+
+#preview-text 
+{
+    padding: 20px
+}
+
+#delete-form
+{
+    margin: 50px
+}
+
+#notes li:hover
+{
+    cursor: pointer;
+}

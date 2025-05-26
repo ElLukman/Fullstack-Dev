@@ -81,6 +81,12 @@ const EpisodeList = MeetEpisodes.map(function(eps)
     return eps.title;
 });
 
+// Destructing for Episode
+const SeriesUnconditional = MeetEpisodes.map(({title, index_episode, rating}) =>
+{
+    return `${title} (${index_episode}) rating ${rating}`
+})
+
 // Map Method
 const CountToTwo = [1,2];
 const CountToTwoDouble = CountToTwo.map(function (num)
@@ -146,5 +152,68 @@ const TotalDatasetMoney_1 = DatasetMoney_1.reduce( (curr_total, singletotal) =>
 // In object case
 const BestEpisode = MeetEpisodes.reduce((bestEps, currEps) => 
     {
-        if(curr_total.ra)
+        if(currEps.rating > bestEps.rating)
+        {
+            return currEps;
+        }
+        return bestEps;
     });
+
+const Person_1 = {
+    firstname: 'Ali',
+    lastname: 'Jaseem',
+    fullname: function() 
+    {
+        return `${this.firstname} ${this.lastname}`;
+    }
+}
+
+// Default Value
+function ThrowDice(sisidadu = 6)
+{
+    return Math.floor(Math.random() * sisidadu) + 1;
+}
+
+// Data campuran
+const DatasetMoney_2 = [...DatasetMoney_1, 10000]
+
+// Merge object 
+const user_1 = {
+    nama: 'Naura',
+    email: 'naura@gmail.com'
+}
+
+const credential = {
+    pass: '91thgfioquhn',
+    status: 'member'
+}
+
+const userbaru = {...user_1, ...credential}
+
+// Rest Param 
+const SumTotal = (...nums) => 
+{
+    return nums.reduce((total, el) => total + el)
+}
+
+// Spread operator
+const NamaPeserta = ['Andi', 'Yusuf', 'Vega', 'Lia', 'Nesta']
+
+const Pemenang = (emas, silver, perunggu, ...lainnya) =>
+{
+    console.log(`Medali emas diraih: ${emas}`)
+    console.log(`Medali emas diraih: ${silver}`)
+    console.log(`Medali emas diraih: ${perunggu}`)
+    console.log(`Medali emas diraih: ${lainnya}`)
+}
+
+// Konsep destructing element array
+const [emas, silver, perunggu, ...lainnya] = NamaPeserta;
+
+// Konsep destructing object
+const user_2 = {
+    name_user2: 'Atep',
+    email_user2: 'atep7@gmail.com'
+}
+
+const {name_user2, email_user2} = user_2

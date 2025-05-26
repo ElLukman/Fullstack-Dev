@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Latihan Event</title>
+		<link rel="stylesheet" href="app.css" />
+	</head>
+	<body>
+		<h1>Event Click</h1>
+		<button ondblclick="alert('kamu sudah klik saya!');">Click saya!</button>
+		<button id="add">Munculkan Heading</button>
+		<button id="delete">Hapus Heading</button>
+		<button id="eventclick">Event Listener Button</button>
+		<section id="container">
+			
+		</section>
+
+		<!-- New Challange -->
+		<section>
+			<h2 id = "label_color_rand">Color Randomize</h2>
+			<button id="color_rand">Generate Random Color</button>
+		</section>
+		
+		<!-- Keyword This -->
+		<section>
+			<button class = "sqr-btn">Colorize</button>
+			<button class = "sqr-btn">Colorize</button>
+		</section>
+
+		<!-- Mengenal object dalam event -->
+		<section>
+			<button id = 'obj-event'>Click</button>
+			<input type = "text" id = 'input-obj'>
+		</section>
+
+		<!-- Event prevent -->
+		<section>
+			<h2>Submit Form</h2>
+			<h3>Preview</h3>
+			<div class = "preview">
+				<p id = "preview-text"></p>
+			</div>
+
+			<form id = "form-section" action = "/destination">				
+				<input type = "text" name = "notes" id = "input-form">
+				<button id = "submit-form">Submit</button>
+			</form>
+			
+			<ul id = "notes">
+
+			</ul>
+			
+			<div>
+				<button id = "delete-form">Remove</button>	
+			</div>
+		</section>
+
+		<script src="app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+#mufc-logo
+{
+    max-width: 7%;
+    max-height: auto;
+    margin: 10px 10px;
+}
+
+/* Tablet */
+@media (max-width: 991px)
+{
+    #mufc-logo
+    {
+        max-width: 10%;
+    }
+}
+
+/* HP */
+@media (max-width: 523px)
+{
+    #mufc-logo
+    {
+        max-width: 15%;
+    }
+}
+
+body
+{
+    margin-top: 100px;
+}
+
+a.navbar-brand
+{
+    width: 80%;
+}
+
+.jumbotron
+{
+    background-color: whitesmoke;
+}
+
+.background-header
+{
+    background-image: url("img/banner.jpg");    
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 40px;
+}
+
+ .button-primer 
+ {
+    background-color: #00bd8e;
+    border-color : #0b9b6b;
+    color        : #fff;
+    text-shadow: 0px 0px;  
+}
+
+.button-primer:hover 
+{
+    background-color: #038c6a;
+    color        : #fff;
+    text-shadow: 0px 0px;  
+}
+
+.service-style
+{
+    margin-top: 15px;
+    background-color: #fafbfc;
+}
+
+.bg-red
+{
+    background-color: tomato;
+}
+
+.button-more:hover 
+{
+    background-color: #1a1a1a;
+    color        : #fff;
+    text-shadow: 0px 0px;  
+}
+
+.text-red
+{
+    color: tomato;
+}
+
+h2:before,
+h2:after {
+ background-color:tomato;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 20%;
+}
+
+h2::before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h2::after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+.button-sekunder
+{
+    background-color: transparent;
+    border-color: tomato;
+    color: tomato;
+}
+
+.button-sekunder:hover
+{
+    background-color: tomato;
+    border-color: whitesmoke;
+    color: whitesmoke;
+}
+
+.cover
+{
+    background: no-repeat center;
+}

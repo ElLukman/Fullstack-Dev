@@ -1,52 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Include Bootstraps -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <style>
-        body
-        {
-            padding-top: 56px;
-        }
-        .jumbotron
-        {
-            background-color: whitesmoke;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
     <title>Our Landing Page</title>
 </head>
+
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar">
+    <nav id="nav-container" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
 
+            <!-- Logo Brand -->
+            <a href="#" class="navbar-brand"><img id="mufc-logo" src="img/mufc-logo.png" alt="MUFC">
+                <strong>Man UTD</strong></a>
+
+            <!-- Button apabila layar mengecil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Icon navigasi --><span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigasi Home, Dll -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#services" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#products" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Header -->
-    <header class="jumbotron">
-ddd
-    </header>
+    <section class="jumbotron jumbotron-fluid background-header">
+        <div class="container-fluid text-center">
+            <h1 class="display-3" style="font-weight: bold; color: rgb(0, 0, 0);">HATED ADORED NEVER IGNORED</h1>
+            <p class="lead" style="font-weight: bold; color: rgb(255, 1, 1);" ;>Dare to dream</p>
+            <a href="#" class="btn button-primer btn-lg" role="button">Join us</a>
+            <a href="#" class="btn btn-secondary btn-lg" role="button">Learn More</a>
+        </div>
+    </section>
 
     <!-- Service -->
-    <section id="service"></section>
+    <section id="services" class="container-fluid service-style">
+        <div class="row text-center">
+            <div class="col-12 pb-4">
+                <h2 class="display-4" style="margin-top: 8rem!important;">Why Man United?</h2>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-red"></i>
+                    <i class="fas fa-list-ul fa-stack-1x text-white"></i>
+                </span>
+                <h3 class="mt-4 text-red">Fasilitas Oke</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-red"></i>
+                    <i class="fas fa-laptop-code fa-stack-1x text-white"></i>
+                </span>
+                <h3 class="mt-4 text-red">Modul Lengkap</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x  text-red"></i>
+                    <i class="fas fa-money-bill fa-stack-1x text-white"></i>
+                </span>
+                <h3 class="mt-4 text-red">Biaya Terjangkau</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x  text-red"></i>
+                    <i class="fas fa-chart-line fa-stack-1x text-white"></i>
+                </span>
+                <h3 class="mt-4 text-red">Terarah</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="col-12 pt-3 mb-5">
+                <a class="btn button-more text-white bg-red btn-lg" href="#" role="button">Other Service</a>
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- Product -->
-    <section id="product"></section>
+    <section id="products" class="container">
+        <div class="row g-4 text-center">
+            <div class="col-12 pb-4">
+                <h2 class="display-4 text-center mb-5" style="margin-top: 8rem!important;">Our Product</h2>
+            </div>
+            <!-- CARD 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/banner.jpg" alt="PIC_1" class="card-img-top" style="max-height: 400px;">
+                    <div class="card-body" style="min-height: 250px;">
+                        <h4 class="card-title">Lorem Ipsum 1</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolore?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Lorem Ipsum Dolor</a>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/banner.jpg" alt="PIC_2" class="card-img-top" style="max-height: 400px;">
+                    <div class="card-body" style="min-height: 250px;">
+                        <h4 class="card-title">Lorem Ipsum 2</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolore?</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Lorem Ipsum Dolor</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/banner.jpg" alt="PIC_3" class="card-img-top" style="max-height: 400px;">
+                    <div class="card-body" style="min-height: 250px;">
+                        <h4 class="card-title">Lorem Ipsum 3</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolore?</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Lorem Ipsum Dolor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About -->
-    <section id="about"></section>
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">About Us</h2>
+            <div class="row g-0">
+                <div class="col-12 col-md-6">
+                    <div style="padding: 15px;">
+                        <h3 class="display-5 text-center text-red mt-3 mb-3">Judul Pertama</h3>
+                        <p style="text-align: justify;">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="col-12 pt-3 text-center">
+                            <a class="btn bg-red btn-lg text-white" target="_blank" href=""
+                                role="button">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="vh-100 cover" style="background-image: url('img/banner.jpg');"></div>
+                </div>
 
-    <!-- Service  -->
-    <section id="content"></section>
+                <div class="col-12 col-md-6">
+                    <div class="vh-100 cover" style="background-image: url('img/banner.jpg');"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div style="padding: 15px;">
+                        <h3 class="display-5 text-center text-red mt-3 mb-3">Judul Kedua</h3>
+                        <p style="text-align: justify;">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <div class="col-12 pt-3 text-center">
+                            <a class="btn bg-red btn-lg text-white" target="_blank" href=""
+                                role="button">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container-fluid text-center" style="background-color: #e9f2eb; padding-top: 25px;">
+        <div class="container">
+        <h2 class="display-4 pb-4">Hubungi Kami Sekarang!</h2>
+        <p class="lead pb-3">Kirim pesan untuk bergabung bersama kami.</p>
+        <a href="#" class="btn button-primer btn-lg mb-4">WhatsApp Kami</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-
+    <footer class="bg-dark">
+        <div class="col-lg-12" style="padding:10px">
+            <div style="text-align: center;">
+                <a href="#" class="text-light" style="padding:5px"><i class=" fab fa-facebook"></i></a>
+                <a href="#" class="text-light" style="padding:5px"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light" style="padding:5px"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-center text-secondary">Copyright © Man UTD 2025</p>
     </footer>
 
     <!-- Include bootstrap for javascript  -->
-    <script src = "js/bootstrap/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/84980ed351.js" crossorigin="anonymous"></script>
 </body>
-</html> 
+
+</html>
